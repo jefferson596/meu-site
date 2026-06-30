@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* fundo escuro elegante */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho e menu */
+header {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Efeito de hover e ativo para links do menu */
+.menu a:hover,
+.menu a.ativo {
+  color: #00aaff; /* azul de destaque */
+}
+
+/* Hero Section */
+.hero {
+  background: url("./img/walpaper.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Hero Title */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Hero Paragraph */
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Hero Button */
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #007BFF;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Hero Button Hover Effect */
+.hero button:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Página Sobre */
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+/* Texto da seção Sobre */
+.texto {
+  flex: 1;
+}
+
+/* Títulos */
+.texto h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Títulos das seções */
+.texto h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #00aaff;
+}
+
+/* Lista de habilidades */
+.texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Lista de habilidades */
+.texto li {
+  margin: 8px 0;
+}
+
+/* Foto */
+.foto img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #00aaff;
+}
+
+/* Formulário de Contato */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Inputs e Textarea */
+form input, form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Botão de envio */
+form button {
+  padding: 12px;
+  background: #007BFF;
+  border: none;
+  border-radius: 6px;
+  color: rgb(248, 245, 245);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Botão de envio hover */
+form button:hover {
+  background: #0056b3;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Ajuste da imagem na seção Sobre */
+  .foto img {
+    margin-top: 20px;
+  }
+
+  /* Cards responsivos */
+  .cards {
+    flex-direction: column;
+  }
+}
+/* Botão Hero */
+.btnHero {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #007BFF;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Botão Hero Hover */
+.btnHero:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+}
+
